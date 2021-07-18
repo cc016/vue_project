@@ -29,7 +29,8 @@ import {
     Tag,
     Tree,
     Select,
-    Option
+    Option,
+    Cascader
 } from 'element-ui'
 
 
@@ -60,7 +61,9 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
-    // Message 需要挂载到vue原型对象上  $message/$http是自定义的属性  this就指代了Vue原型对象 所以可以直接this.$message
+Vue.use(Cascader)
+
+// Message 需要挂载到vue原型对象上  $message/$http是自定义的属性  this就指代了Vue原型对象 所以可以直接this.$message
 Vue.prototype.$message = Message
 
 Vue.prototype.$confirm = MessageBox.confirm
